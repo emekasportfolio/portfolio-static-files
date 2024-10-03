@@ -1,0 +1,28 @@
+/* Styling specific to the About page */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    margin: 20px;
+}
+
+/* Custom styles for about page */
+h1 {
+    font-size: 2.5em;
+    color: #2F4F4F; /* Dark Slate Gray */
+}
+
+p {
+    font-size: 1.2em;
+    color: #556B2F; /* Dark Olive Green */
+}
+
+a {
+    color: #8B0000; /* Dark Red */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,25 @@
+/* Styling specific to the Home page */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    margin: 20px;
+}
+
+/* Resize the Flask image */
+.resize {
+    width: 300px;
+    height: auto;
+}
+
+/* Additional custom styling for home page content */
+h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666;
+}
