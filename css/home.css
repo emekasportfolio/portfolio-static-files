@@ -1,25 +1,254 @@
-/* Styling specific to the Home page */
 body {
-    font-family: Arial, sans-serif;
-}
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            padding-bottom: 60px;
+            box-sizing: border-box;
+        }
 
-.content {
-    margin: 20px;
-}
+        /* Forex table styling */
+        .forex-table {
+            width: 100%;
+            color: ivory;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.8em;
+        }
 
-/* Resize the Flask image */
-.resize {
-    width: 300px;
-    height: auto;
-}
+        .forex-table th, .forex-table td {
+            padding: 12px;
+            text-align: center;
+        }
 
-/* Additional custom styling for home page content */
-h1 {
-    font-size: 2.5em;
-    color: #333;
-}
+        .forex-table th {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
 
-p {
-    font-size: 1.2em;
-    color: #666;
-}
+        .forex-table td {
+            border: none;
+        }
+
+        .green-bg {
+            background-color: green;
+        }
+
+        .red-bg {
+            background-color: red;
+        }
+
+        .green-text {
+            color: green;
+        }
+
+        .red-text {
+            color: red;
+        }
+
+        .icon-up, .icon-down {
+            animation: blink 1s infinite; /* Blinking effect */
+        }
+
+        .icon-up::before {
+            content: '▲';
+            color: green;
+        }
+
+        .icon-down::before {
+            content: '▼';
+            color: red;
+        }
+
+        .icon-dash::before {
+            content: '—';
+            color: ivory;
+        }
+
+        /* Blinking effect */
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .blinking-bg {
+            animation: bg-blink 1s infinite; /* Blinking background effect */
+        }
+
+        @keyframes bg-blink {
+            0%, 100% { background-color: transparent; }
+            50% { background-color: rgba(0, 128, 0, 0.5); } /* Green background */
+        }
+
+        .red-blink {
+            animation: red-bg-blink 1s infinite; /* Blinking red background effect */
+        }
+
+        @keyframes red-bg-blink {
+            0%, 100% { background-color: transparent; }
+            50% { background-color: rgba(255, 0, 0, 0.5); } /* Red background */
+        }
+
+        /* Styling for the real-time clock */
+        .time-container {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        .flex-container-ad {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .content-60 {
+            width: 60%;
+body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            padding-bottom: 60px;
+            box-sizing: border-box;
+        }
+
+/* Forex table styling */
+.forex-table {
+            width: 100%;
+            color: ivory;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.8em;
+        }
+
+.forex-table th, .forex-table td {
+            padding: 12px;
+            text-align: center;
+        }
+
+.forex-table th {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+.forex-table td {
+            border: none;
+        }
+
+.green-bg {
+            background-color: green;
+        }
+
+.red-bg {
+            background-color: red;
+        }
+
+.green-text {
+            color: green;
+        }
+
+.red-text {
+            color: red;
+        }
+
+.icon-up, .icon-down {
+            animation: blink 1s infinite; /* Blinking effect */
+        }
+
+.icon-up::before {
+            content: '▲';
+            color: green;
+        }
+
+.icon-down::before {
+            content: '▼';
+            color: red;
+        }
+
+.icon-dash::before {
+            content: '—';
+            color: ivory;
+        }
+
+/* Blinking effect */
+@keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+.blinking-bg {
+            animation: bg-blink 1s infinite; /* Blinking background effect */
+        }
+
+@keyframes bg-blink {
+            0%, 100% { background-color: transparent; }
+            50% { background-color: rgba(0, 128, 0, 0.5); } /* Green background */
+        }
+
+.red-blink {
+            animation: red-bg-blink 1s infinite; /* Blinking red background effect */
+        }
+
+@keyframes red-bg-blink {
+            0%, 100% { background-color: transparent; }
+            50% { background-color: rgba(255, 0, 0, 0.5); } /* Red background */
+        }
+
+/* Styling for the real-time clock */
+.time-container {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+.flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+.flex-container-ad {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+.content-60 {
+            width: 60%;
+            background-color: #1a1a1a;
+            border-radius: 5px; /* Added border radius */
+        }
+
+.content-40 {
+            width: 40%;
+            background-color: #333333;
+            padding: 20px;
+			border-radius: 5px;
+        }
+
+table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+.fired-up {
+            margin-right: 15px;
+        }
+
+#table-body {
+            text-align: center;
+        }
